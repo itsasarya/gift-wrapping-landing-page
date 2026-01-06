@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pack & Pearl — Gift Wrapping Concept</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -14,11 +15,20 @@
         <nav class="navbar">
             <div class="container nav-inner">
                 <div class="logo">Pack & Pearl</div>
-                <div class="nav-links">
+
+                <!-- Desktop links -->
+                <div class="nav-links" id="navLinks">
                     <a href="#services">Services</a>
                     <a href="#process">How It Works</a>
                     <a href="#contact">Contact</a>
                 </div>
+
+                <!-- Hamburger -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
     </header>
