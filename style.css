@@ -11,7 +11,7 @@
     --space-xs: 8px;
     --space-sm: 16px;
     --space-md: 24px;
-    --space-lg: 40px;
+    --space-lg: 48px;
     --space-xl: 72px;
 
     --radius-lg: 16px;
@@ -66,6 +66,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 var(--space-xl);
 }
 
 .nav-links a {
@@ -232,9 +233,22 @@ a:focus-visible,
         display: block;
     }
 
+    .nav-inner {
+        padding: 0 var(--space-md);
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .primary-btn {
+        max-width: 230px;
+    }
+
     .nav-links {
         position: absolute;
-        top: 72px;
+        top: var(--space-xl);
         left: 0;
         right: 0;
         background: var(--color-bg);
